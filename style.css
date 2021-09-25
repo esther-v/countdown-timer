@@ -45,8 +45,6 @@ h2{
     color: #e8bebe;
 }
 .day, .hour, .minutes, .seconds{
-    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     color:rgb(255, 131, 117);
     background: rgb(59, 69, 85);
     width: 85px;
