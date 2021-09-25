@@ -13,6 +13,7 @@ h2{
     color: #e8bebe;
     margin: 40px auto;
     font-size: 35px;
+    text-align: center;
 }
 
 .container {
@@ -30,7 +31,6 @@ h2{
     gap: 30px;
 }
 .countdown > div{
-    border: 1px solid red;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -55,4 +55,52 @@ h2{
     display:flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 935px){
+    .countdown > div{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 722px) {
+    .countdown > div{
+        width: 100px;
+        padding: 10px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 522px){
+    .day, .hour, .minutes, .seconds{
+        width: 65px;
+        height: 60px;
+        font-size: 40px;
+    }
+    .countdown{
+        gap: 10px;
+    }
+    .countdown > div{
+        height: 110px;
+    }
+    .countdown p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 448px){
+    .day, .hour, .minutes, .seconds{
+        width: 45px;
+        height: 40px;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+    .countdown > div{
+        width: 70px;
+        padding: 10px;
+        height: 90px;
+    }
+    .countdown p {
+        font-size: 11px;
+    }
 }
