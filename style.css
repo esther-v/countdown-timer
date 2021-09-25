@@ -6,6 +6,13 @@
 
 body{
     height: 100vh;
+    font-family: 'Mulish', sans-serif;
+}
+
+h2{
+    color: #e8bebe;
+    margin: 40px auto;
+    font-size: 35px;
 }
 
 .container {
@@ -16,6 +23,7 @@ body{
     height: 100vh;
     padding: 50px;
     gap: 60px;
+    background: #23272b;
 }
 .countdown{
     display: flex;
@@ -23,8 +31,28 @@ body{
 }
 .countdown > div{
     border: 1px solid red;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 160px;
 }
 .countdown p {
-    font-size: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e8bebe;
+}
+.day, .hour, .minutes, .seconds{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    color:rgb(255, 131, 117);
+    background: rgb(59, 69, 85);
+    width: 85px;
+    height: 80px;
+    font-size: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
