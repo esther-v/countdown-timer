@@ -1,21 +1,18 @@
-*, ::after, ::before{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    height: 100vh;
     font-family: 'Mulish', sans-serif;
 }
-
 h2{
     color: #e8bebe;
-    margin: 40px auto;
+    margin: 40px auto 80px;
     font-size: 35px;
     text-align: center;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -23,7 +20,6 @@ h2{
     justify-content: flex-start;
     height: 100vh;
     padding: 50px;
-    gap: 60px;
     background: #23272b;
 }
 .countdown{
@@ -36,7 +32,6 @@ h2{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
     height: 160px;
 }
 .countdown p {
@@ -55,50 +50,28 @@ h2{
     justify-content: center;
 }
 
-@media screen and (max-width: 935px){
-    .countdown > div{
-        width: 150px;
-    }
-}
-
-@media screen and (max-width: 722px) {
-    .countdown > div{
-        width: 100px;
-        padding: 10px;
-        height: 130px;
-    }
-}
-
-@media screen and (max-width: 522px){
-    .day, .hour, .minutes, .seconds{
-        width: 65px;
-        height: 60px;
-        font-size: 40px;
-    }
+@media screen and (max-width: 610px){
     .countdown{
-        gap: 10px;
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 530px){
+    .countdown{
+        justify-content: space-between;
+    }
+    .day, .hour, .minutes, .seconds{
+        width: 55px;
+        height: 55px;
+        font-size: 35px;  
     }
     .countdown > div{
         height: 110px;
+        padding: 5px;
+        justify-content: center;
     }
     .countdown p {
-        font-size: 13px;
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 448px){
-    .day, .hour, .minutes, .seconds{
-        width: 45px;
-        height: 40px;
-        font-size: 23px;
-        margin-bottom: 15px;
-    }
-    .countdown > div{
-        width: 70px;
-        padding: 10px;
-        height: 90px;
-    }
-    .countdown p {
-        font-size: 11px;
-    }
-}
